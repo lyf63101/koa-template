@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "esnext"
+    ],
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": "./",
+    "paths": {
+      "@src": ["./src"],
+      "@src/*": ["./src/*"],
+      "@controller": ["./src/controller"],
+      "@controller/*": ["./src/controller/*"],
+      "@dao": ["./src/dao"],
+      "@dao/*": ["./src/dao/*"],
+      "@middleware": ["./src/middleware"],
+      "@middleware/*": ["./src/middleware/*"],
+      "@model": ["./src/model"],
+      "@model/*": ["./src/model/*"],
+      "@router": ["./src/router"],
+      "@router/*": ["./src/router/*"],
+      "@service": ["./src/service"],
+      "@service/*": ["./src/service/*"],
+      "@utils": ["./src/utils"],
+      "@utils/*": ["./src/utils/*"]
+    },
+  },
+  "exclude": ["node_modules", "dist", "public"],
+  "include": [
+    "src/**/*"
+  ]
+}
