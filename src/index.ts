@@ -14,9 +14,8 @@ initDB()
   .then(() => {
     return new Promise((resolve, _reject) => {
       app.listen(PORT, () => resolve(PORT));
-    })
+    });
   })
   .then((port) => {
     console.log(`koa app is running at port ${port}`);
   });
-
